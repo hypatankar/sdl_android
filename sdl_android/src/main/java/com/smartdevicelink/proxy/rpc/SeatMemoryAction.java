@@ -23,9 +23,18 @@ public class SeatMemoryAction extends RPCStruct{
 	 *            The Hashtable to use
 	 */
 	public SeatMemoryAction(Hashtable<String, Object> hash) {
-        super(hash);
-    }
+        	super(hash);
+    	}
 
+	 /**
+	 * Constructs a new SeatMemoryAction object indicated by the Integer and SeatMemoryActionType parameter
+	 * 
+	 * @param id
+	 *		The id of the seat examined
+	 *
+	 * @param action
+	 *		Save current seat postions and settings to seat memory if "SAVE" is the action or Restore / apply the seat memory settings to the current seat if "RESTORE" or No action to be performed if "NONE" .
+	 */
 	public SeatMemoryAction(@NonNull Integer id, @NonNull SeatMemoryActionType action) {
 		this();
 		setId(id);
@@ -38,8 +47,8 @@ public class SeatMemoryAction extends RPCStruct{
 	 * @param id
 	 */
 	public void setId(@NonNull Integer id) {
-        setValue(KEY_ID, id);
-    }
+        	setValue(KEY_ID, id);
+    	}
 
 	/**
 	 * Gets the id portion of the SeatMemoryAction class
@@ -47,8 +56,8 @@ public class SeatMemoryAction extends RPCStruct{
 	 * @return Integer
 	 */
 	public Integer getId() {
-        return getInteger(KEY_ID);
-    }
+        	return getInteger(KEY_ID);
+   	}
 
 	/**
 	 * Sets the label portion of the SeatMemoryAction class
@@ -56,8 +65,8 @@ public class SeatMemoryAction extends RPCStruct{
 	 * @param label
 	 */
 	public void setLabel(String label) {
-        setValue(KEY_LABEL, label);
-    }
+        	setValue(KEY_LABEL, label);
+    	}
 
 	/**
 	 * Gets the label portion of the SeatMemoryAction class
@@ -65,8 +74,8 @@ public class SeatMemoryAction extends RPCStruct{
 	 * @return String
 	 */
 	public String getLabel() {
-        return getString(KEY_LABEL);
-    }
+        	return getString(KEY_LABEL);
+    	}
 
 	/**
 	 * Sets the action portion of the SeatMemoryAction class
@@ -74,8 +83,8 @@ public class SeatMemoryAction extends RPCStruct{
 	 * @param action
 	 */
 	public void setAction(@NonNull SeatMemoryActionType action) {
-        setValue(KEY_ACTION, action);
-    }
+        	setValue(KEY_ACTION, action);
+    	}
 
 	/**
 	 * Gets the action portion of the SeatMemoryAction class

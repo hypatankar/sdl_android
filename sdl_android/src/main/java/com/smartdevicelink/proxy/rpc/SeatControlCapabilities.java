@@ -35,9 +35,15 @@ public class SeatControlCapabilities extends RPCStruct{
 	 *            The Hashtable to use
 	 */
 	public SeatControlCapabilities(Hashtable<String, Object> hash) {
-        super(hash);
-    }
+        	super(hash);
+    	}
 
+	 /**
+	 * Constructs a new SeatControlCapabilities object indicated by the String parameter
+	 *
+	 * @param moduleName  
+	 *		The short friendly name of the seat control module. It should not be used to identify a module by mobile application.
+	 */
 	public SeatControlCapabilities(@NonNull String moduleName) {
 		this();
 		setModuleName(moduleName);
@@ -48,16 +54,16 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return String
 	 */
 	public String getModuleName() {
-        return getString( KEY_MODULE_NAME );
-    }
+        	return getString( KEY_MODULE_NAME );
+    	}
 
 	/**
 	 * Sets the moduleName portion of the SeatControlCapabilities class
-	 * @param moduleName  -  The short friendly name of the light control module. It should not be used to identify a module by mobile application.
+	 * @param moduleName  -  The short friendly name of the seat control module. It should not be used to identify a module by mobile application.
 	 */
 	public void setModuleName(@NonNull String moduleName ) {
-        setValue(KEY_MODULE_NAME, moduleName);
-    }
+        	setValue(KEY_MODULE_NAME, moduleName);
+    	}
 
 	/**
 	 * Sets the heatingEnabledAvailable portion of the SeatControlCapabilities class
@@ -110,8 +116,8 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return Boolean.
 	 */
 	public Boolean getHeatingLevelAvailable() {
-        return getBoolean(KEY_HEATING_LEVEL_AVAILABLE);
-    }
+        	return getBoolean(KEY_HEATING_LEVEL_AVAILABLE);
+    	}
 
 	/**
 	 * Sets the coolingLevelAvailable portion of the SeatControlCapabilities class
@@ -128,8 +134,8 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return Boolean.
 	 */
 	public Boolean getCoolingLevelAvailable() {
-        return getBoolean(KEY_COOLING_LEVEL_AVAILABLE);
-    }
+        	return getBoolean(KEY_COOLING_LEVEL_AVAILABLE);
+    	}
 
 	/**
 	 * Sets the horizontalPositionAvailable portion of the SeatControlCapabilities class
@@ -218,8 +224,8 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return Boolean.
 	 */
 	public Boolean getBackTiltAngleAvailable() {
-        return getBoolean(KEY_BACK_TILT_ANGLE_AVAILABLE);
-    }
+        	return getBoolean(KEY_BACK_TILT_ANGLE_AVAILABLE);
+    	}
 
 	/**
 	 * Sets the headSupportHorizontalPositionAvailable portion of the SeatControlCapabilities class
@@ -290,8 +296,8 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return Boolean.
 	 */
 	public Boolean getMassageModeAvailable() {
-        return getBoolean(KEY_MASSAGE_MODE_AVAILABLE);
-    }
+        	return getBoolean(KEY_MASSAGE_MODE_AVAILABLE);
+    	}
 
 	/**
 	 * Sets the massageCushionFirmnessAvailable portion of the SeatControlCapabilities class
@@ -326,6 +332,6 @@ public class SeatControlCapabilities extends RPCStruct{
 	 * @return Boolean.
 	 */
 	public Boolean getMemoryAvailable() {
-        return getBoolean(KEY_MEMORY_AVAILABLE);
-    }
+        	return getBoolean(KEY_MEMORY_AVAILABLE);
+    	}
 }

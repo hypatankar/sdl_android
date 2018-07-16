@@ -27,9 +27,18 @@ public class MassageModeData extends RPCStruct{
 	 *            The Hashtable to use
 	 */
 	public MassageModeData(Hashtable<String, Object> hash) {
-        super(hash);
-    }
+        	super(hash);
+    	}
 
+	 /**
+	 * Constructs a new  MassageModeData object indicated by the MassageZone and MassageMode parameters
+	 *
+	 * @param massageZone  
+	 *			The zone to massage in
+	 *
+	 * @param massageMode
+	 *			The mode of massage used
+	 */
 	public MassageModeData(@NonNull MassageZone massageZone, @NonNull MassageMode massageMode) {
 		this();
 		setMassageZone(massageZone);

@@ -26,9 +26,18 @@ public class MassageCushionFirmness extends RPCStruct{
 	 *            The Hashtable to use
 	 */
 	public MassageCushionFirmness(Hashtable<String, Object> hash) {
-        super(hash);
-    }
+        	super(hash);
+    	}
 
+	/**
+	 * Constructs a new MassageCushionFirmness object indicated by the MassageCushion and Integer parameters
+	 *
+	 * @param cushion
+	 *			The type of cushion to use
+	 *
+	 * @param firmness
+	 *			The level of firmness of the cushion
+	 */	
 	public MassageCushionFirmness(@NonNull MassageCushion cushion, @NonNull Integer firmness) {
 		this();
 		setCushion(cushion);
@@ -41,8 +50,8 @@ public class MassageCushionFirmness extends RPCStruct{
 	 * @param cushion
 	 */
 	public void setCushion(@NonNull MassageCushion cushion) {
-        setValue(KEY_CUSHION, cushion);
-    }
+        	setValue(KEY_CUSHION, cushion);
+    	}
 
 	/**
 	 * Gets the cushion portion of the MassageCushionFirmness class
@@ -59,8 +68,8 @@ public class MassageCushionFirmness extends RPCStruct{
 	 * @param firmness
 	 */
 	public void setFirmness(@NonNull Integer firmness) {
-        setValue(KEY_FIRMNESS, firmness);
-    }
+        	setValue(KEY_FIRMNESS, firmness);
+    	}
 
 	/**
 	 * Gets the firmness portion of the MassageCushionFirmness class
@@ -68,6 +77,6 @@ public class MassageCushionFirmness extends RPCStruct{
 	 * @return Integer
 	 */
 	public Integer getFirmness() {
-        return getInteger(KEY_FIRMNESS);
-    }
+        	return getInteger(KEY_FIRMNESS);
+    	}
 }
